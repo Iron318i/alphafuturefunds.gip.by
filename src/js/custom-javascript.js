@@ -12,24 +12,17 @@
 	return false;
     });
 
-    $('.instructors-cats a').on('click', function (e) {
+    $('.portfolio-cats a').on('click', function (e) {
 	e.preventDefault();
 	$cat = this.hash.substr(1);
-	$('.instructors-cats a').removeClass('active');
+	$('.portfolio-cats a').removeClass('active');
 	$(this).addClass('active');
 	if ($cat == 'all') {
-	    $('#instructors .col-md-4').fadeIn();
+	    $('.portfolio .col-6').fadeIn();
 	} else {
-	    $('#instructors .col-md-4').hide();
-	    $('#instructors .' + $cat).fadeIn();
+	    $('.portfolio .col-6').hide('slow');
+	    $('.portfolio .' + $cat).fadeIn();
 	}
-    });
-
-    $('.owl-carousel.gallery').owlCarousel({
-	responsiveClass: true,
-	dots: true,
-	nav: false,
-	items: 1
     });
 
 }(jQuery);
