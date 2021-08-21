@@ -34,6 +34,16 @@
 	    --bs-gutter-x: 7rem;
 	}
     }
+    .what-we-do{
+	padding: 0 2rem;
+	.row{
+	    --bs-gutter-x: 4rem;
+	}
+	.col-md-6{
+	    padding-top: 1.5rem;
+	    padding-bottom: 2rem;
+	}
+    }
 }
 
 @include media-breakpoint-up(xxl) {

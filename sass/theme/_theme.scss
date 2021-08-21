@@ -87,7 +87,7 @@ label{
 }
 .our-approach{
     padding: 1rem;
-    background-color: #fff;
+    background-color: rgba(#fff, .9);
     color: $primary;
     font-weight: 400;
     .icon{
@@ -178,5 +178,29 @@ label{
 	font-weight: 400;
 	font-family: $font-family-cursive;
 	text-transform: uppercase;
+    }
+}
+.what-we-do{
+    .col-md-6{
+	background-color: rgba(#fff, .9);
+	box-shadow: 0 0 0 1px #ebebeb;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	&:first-child{
+	    svg{
+		width: 1.7em;
+	    }
+	}
+    }
+    .icon-wrp{
+	text-align: center;
+	color: $warning;
+	font-size: 2rem;
+	margin-bottom: .3rem;
+    }
+    .h3{
+	color: $warning;
+	margin-bottom: 1.5rem;
+	text-align: center;
     }
 }
