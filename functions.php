@@ -20,6 +20,7 @@ $alphafuturefunds_includes = array(
     '/editor.php', // Load Editor functions.
     '/disable-comments.php',
     '/widgets.php',
+    '/cpt.php',
 );
 
 foreach ($alphafuturefunds_includes as $file) {

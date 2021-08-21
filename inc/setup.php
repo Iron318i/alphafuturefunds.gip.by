@@ -132,3 +132,5 @@ add_filter('use_widgets_block_editor', '__return_false');
 add_filter('excerpt_length', function() {
     return 21;
 });
+
+add_image_size('project', 400, 225, array('center', 'center'));
