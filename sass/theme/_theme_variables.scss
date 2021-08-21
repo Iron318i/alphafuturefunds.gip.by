@@ -31,20 +31,20 @@ $orange:  #f7941e;
 
 // scss-docs-start colors-map
 $colors: (
-"blue":     $blue,
-"orange":     $orange
+"blue": $blue,
+"orange": $orange
 );
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue;
-$dark:          $black;
+$primary: $blue;
+$warning: $orange;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-"primary":    $primary,
-"dark":       $dark
+"primary": $primary,
+"warning": $warning
 );
 // scss-docs-end theme-colors-map
 
@@ -270,7 +270,9 @@ $input-btn-padding-y: rem(4.5px);
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
-
+$btn-padding-y-lg: rem(11.5px);
+$btn-padding-x-lg: rem(36px);
+$btn-font-size-lg: rem(18px);
 // Allows for customizing button radius independently from global border radius
 // scss-docs-end btn-variables
 
