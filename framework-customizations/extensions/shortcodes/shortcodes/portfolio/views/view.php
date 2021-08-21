@@ -7,7 +7,7 @@ if (!defined('FW')) {
  * @var array $atts
  */
 ?>
-<div class="portfolio">
+<div class="portfolio mb-2">
     <ul class="portfolio-cats nav">
 	<li><a href="#all" class="active">All</a></li>
 	<?php

@@ -17,13 +17,11 @@ if ($projectterms && !is_wp_error($projectterms)) {
     }
 }
 ?>">
-    <a href="<?php echo fw_get_db_post_option(get_the_ID(), 'link') ?>" class="project">
-	<div class="photo">
-	    <?php echo get_the_post_thumbnail($post->ID, 'project'); ?>
+    <a href="<?php echo fw_get_db_post_option(get_the_ID(), 'link') ?>" class="project" target="_blank">
+	<?php echo get_the_post_thumbnail($post->ID, 'project'); ?>
+	<div class="description">
+	    <?php the_title('<h4 class="title">', '</h4>'); ?>
+	    <div class="project-cat"><?php echo $projectterms[0]->name; ?></div>
 	</div>
-	<header class="entry-header">
-	    <?php the_title('<h2 class="h5 name">', '</h2>'); ?>
-	    <p class="role"><?php echo fw_get_db_post_option(get_the_ID(), 'role') ?></p>
-	</header>
     </a>
 </div>

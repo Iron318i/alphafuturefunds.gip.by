@@ -115,10 +115,6 @@ label{
 	}
     }
 }
-.portfolio{
-    .col-6 {
-    }
-}
 .portfolio-cats{
     margin-bottom: 2rem;
     justify-content: center;
@@ -139,5 +135,48 @@ label{
 .project{
     box-shadow: 0 0 0 1px #eeefef;
     display: block;
+    overflow: hidden;
     position: relative;
+    .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background-color: $primary;
+	color: #a3a9c8;
+	padding: rem(11.5px 5px);
+	opacity: 0;
+	transform: translateY(100%);
+	transition: all .5s ease;
+	&:after{
+	    content: '';
+	    width: 0;
+	    height: 0;
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    border-left: rem(12px) solid transparent;
+	    border-right: rem(12px) solid transparent;
+	    border-bottom: rem(8px) solid $primary;
+	    transform: translate(-50%, -100%);
+	}
+    }
+    &:hover{
+	.description{
+	    transform: translateY(0);
+	    opacity: 1;
+	}
+    }
+    .title{
+	font-size: 1rem;
+	color: $warning;
+	margin-bottom: .5rem;
+    }
+    .project-cat{
+	font-size: rem(15px);
+	font-weight: 400;
+	font-family: $font-family-cursive;
+	text-transform: uppercase;
+    }
 }
