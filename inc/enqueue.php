@@ -15,7 +15,7 @@ if (!function_exists('alphafuturefunds_scripts')) {
      */
     function alphafuturefunds_scripts() {
 	// Get the theme data.
-	wp_enqueue_style('fonts-styles', 'https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noticia+Text:wght@400;700&family=Unica+One&display=swap', [], null);
+	wp_enqueue_style('fonts-styles', 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noticia+Text:wght@400;700&family=Unica+One&display=swap', [], null);
 	$the_theme = wp_get_theme();
 	$theme_version = $the_theme->get('Version');
 	$css_version = $theme_version . '.' . filemtime(get_template_directory() . '/css/theme.min.css');

@@ -14,18 +14,18 @@ defined('ABSPATH') || exit;
  *
  * @link https://developer.wordpress.org/reference/hooks/dynamic_sidebar_params/
  */
-add_action('widgets_init', 'pocketmonster_widgets_init');
+add_action('widgets_init', 'alphafuturefunds_widgets_init');
 
-if (!function_exists('pocketmonster_widgets_init')) {
+if (!function_exists('alphafuturefunds_widgets_init')) {
 
     /**
      * Initializes themes widgets.
      */
-    function pocketmonster_widgets_init() {
+    function alphafuturefunds_widgets_init() {
 
 	register_sidebar(
 		array(
-		    'name' => __('Footer 1', 'pocketmonster'),
+		    'name' => __('Footer 1', 'alphafuturefunds'),
 		    'id' => 'footer-1',
 		    'before_widget' => '',
 		    'after_widget' => '',
@@ -35,7 +35,7 @@ if (!function_exists('pocketmonster_widgets_init')) {
 	);
 	register_sidebar(
 		array(
-		    'name' => __('Footer 2', 'pocketmonster'),
+		    'name' => __('Footer 2', 'alphafuturefunds'),
 		    'id' => 'footer-2',
 		    'before_widget' => '',
 		    'after_widget' => '',
@@ -45,7 +45,7 @@ if (!function_exists('pocketmonster_widgets_init')) {
 	);
 	register_sidebar(
 		array(
-		    'name' => __('Footer 3', 'pocketmonster'),
+		    'name' => __('Footer 3', 'alphafuturefunds'),
 		    'id' => 'footer-3',
 		    'before_widget' => '',
 		    'after_widget' => '',
@@ -55,4 +55,4 @@ if (!function_exists('pocketmonster_widgets_init')) {
 	);
     }
 
-} // End of function_exists( 'pocketmonster_widgets_init' ).
+} // End of function_exists( 'alphafuturefunds_widgets_init' ).

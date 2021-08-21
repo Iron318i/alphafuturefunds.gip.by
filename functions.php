@@ -19,7 +19,7 @@ $alphafuturefunds_includes = array(
     '/class-wp-bootstrap-navwalker.php', // Load custom WordPress nav walker.
     '/editor.php', // Load Editor functions.
     '/disable-comments.php',
-	//'/widgets.php',
+    '/widgets.php',
 );
 
 foreach ($alphafuturefunds_includes as $file) {
