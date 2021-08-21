@@ -115,3 +115,29 @@ label{
 	}
     }
 }
+.portfolio{
+    .col-6 {
+    }
+}
+.portfolio-cats{
+    margin-bottom: 2rem;
+    justify-content: center;
+    li+li:before {
+        content: '/';
+	padding: rem(0px 10px);
+	display: inline-block;
+	opacity: 0.2;
+	color: #888;
+    }
+    a{
+	color: $primary;
+	font-size: rem(17px);
+	font-weight: 400;
+	font-family: $font-family-cursive;
+    }
+}
+.project{
+    box-shadow: 0 0 0 1px #eeefef;
+    display: block;
+    position: relative;
+}

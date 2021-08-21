@@ -34,7 +34,7 @@ if ($atts['mw'] > 0) {
 ?>
 <div class="fw-heading fw-heading-<?php echo esc_attr($atts['heading']); ?><?php echo!empty($atts['centered']) ? ' text-center' : ''; ?>" <?= $style ?>>
     <?php if (!empty($atts['subtitle'])): ?>
-        <div class="fw-special-subtitle <?php echo $margin_class; ?>"><?php echo $atts['subtitle']; ?></div>
+        <div class="fw-special-subtitle"><?php echo $atts['subtitle']; ?></div>
     <?php endif; ?>
     <?php $heading = "<{$atts['heading']} class='fw-special-title{$class}'>{$atts['title']}</{$atts['heading']}>"; ?>
     <?php echo $heading; ?>
