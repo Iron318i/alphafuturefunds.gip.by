@@ -22,18 +22,9 @@ defined('ABSPATH') || exit;
     <body <?php body_class(); ?> <?php alphafuturefunds_body_attributes(); ?>>
 	<?php do_action('wp_body_open'); ?>
 	<header class="site-header">
-	    <nav class="navbar navbar-expand-lg navbar-light">
+	    <nav class="navbar navbar-expand-md navbar-light">
 		<div class="container">
 		    <a href="<?php echo site_url(); ?>" class="logo-link" rel="home"><img src="<?php echo get_template_directory_uri() ?>/img/main-logo.svg" alt="<?php bloginfo('name'); ?>"></a>
-		    <ul class="nav social hide-down-md">
-			<li>
-			    <button type="button" class="btn-search" data-bs-toggle="modal" data-bs-target="#searchModal"> <svg class="icon"><use xlink:href="#search"></use></svg></button>
-			</li>
-			<?php if (fw_get_db_settings_option('fb')) { ?><li><a href="<?php echo fw_get_db_settings_option('in') ?>" target="_blank"><svg class="icon"><use xlink:href="#facebook"></use></svg></a></li><?php } ?>
-			<?php if (fw_get_db_settings_option('tw')) { ?><li><a href="<?php echo fw_get_db_settings_option('tw') ?>" target="_blank"><svg class="icon"><use xlink:href="#twitter"></use></svg></a></li><?php } ?>
-			<?php if (fw_get_db_settings_option('insta')) { ?><li><a href="<?php echo fw_get_db_settings_option('insta') ?>" target="_blank"><svg class="icon"><use xlink:href="#instagram"></use></svg></a></li><?php } ?>
-			<?php if (fw_get_db_settings_option('in')) { ?><li><a href="<?php echo fw_get_db_settings_option('in') ?>" target="_blank"><svg class="icon"><use xlink:href="#linkedin"></use></svg></a></li><?php } ?>
-		    </ul>
 		    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
 			<span class="toggle-icon"><i></i><i></i><i></i><i></i></span>
 			<span class="btn-text"><?php _e('Menu', 'alphafuturefunds'); ?></span>
@@ -51,15 +42,6 @@ defined('ABSPATH') || exit;
 				)
 			);
 			?>
-			<ul class="nav social hide-up-md">
-			    <li>
-				<button type="button" class="btn-search" data-bs-toggle="modal" data-bs-target="#searchModal"> <svg class="icon"><use xlink:href="#search"></use></svg></button>
-			    </li>
-			    <?php if (fw_get_db_settings_option('fb')) { ?><li><a href="<?php echo fw_get_db_settings_option('in') ?>" target="_blank"><svg class="icon"><use xlink:href="#facebook"></use></svg></a></li><?php } ?>
-			    <?php if (fw_get_db_settings_option('tw')) { ?><li><a href="<?php echo fw_get_db_settings_option('tw') ?>" target="_blank"><svg class="icon"><use xlink:href="#twitter"></use></svg></a></li><?php } ?>
-			    <?php if (fw_get_db_settings_option('insta')) { ?><li><a href="<?php echo fw_get_db_settings_option('insta') ?>" target="_blank"><svg class="icon"><use xlink:href="#instagram"></use></svg></a></li><?php } ?>
-			    <?php if (fw_get_db_settings_option('in')) { ?><li><a href="<?php echo fw_get_db_settings_option('in') ?>" target="_blank"><svg class="icon"><use xlink:href="#linkedin"></use></svg></a></li><?php } ?>
-			</ul>
 		    </div>
 		</div>
 	    </nav>

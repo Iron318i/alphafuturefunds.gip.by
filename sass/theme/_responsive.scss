@@ -1,170 +1,13 @@
 @include media-breakpoint-up(sm) {
-    #main-banner{
-	h1.fw-special-title{
-	    font-size: rem(70px);
-	}
-	.fw-special-subtitle {
-	    font-size: rem(42px);
-	}
-    }
-    .page-info{
-	padding: rem(34px 0 34px);
-	&:after{
-	    border-width: rem(44px 45px 0 45px);
-	}
-    }
 }
 @include media-breakpoint-up(md) {
     html{
 	font-size: 16px;
     }
-    .hide-up-md{
-	display: none!important;
-    }
-    .page-header{
-	.h1{
-	    font-size: vw(81px);
-	}
-    }
-    .bg-gym{
-	background-image: url(../img/bg-gym-lg.jpg);
-    }
-    .home{
-	.site-header{
-	    position: absolute;
-	    left: 0;
-	    right: 0;
-	    top: 0;
-	}
-    }
-    #main-banner{
-	background: url(../img/main-banner.jpg) center / cover no-repeat;
-	.row{
-	    align-items: center;
-	}
-	.text-block{
-	    max-width: 26rem
-	}
-    }
 }
 @include media-breakpoint-up(lg) {
-    html{
-	font-size: 16px;
-    }
-    .h1, h1, .h2, h2 {
-	font-size: 3.29412rem;
-    }
-    #main-banner{
-	h1.fw-special-title{
-	    font-size: rem(81px);
-	}
-	.fw-special-subtitle {
-	    font-size: rem(48px);
-	}
-	.text-block{
-	    max-width: 34rem
-	}
-    }
 }
-@media(min-width: 961px){
-    #classes{
-	max-width: 1920px;
-	margin:0 auto;
-	.row:nth-child(2n){
-	    flex-direction: row-reverse;
-	    .col-lg-6:nth-child(2){
-		align-items: flex-end;
 
-	    }
-	    .col-lg-6:nth-child(1){
-		&:after{
-		    transform: scale(-1, 1);
-		}
-	    }
-	}
-	.col-lg-6:nth-child(1){
-	    position: relative;
-	    z-index: 1;
-	    img{
-		object-fit: cover;
-		height: 100%;
-		width: auto;
-	    }
-	    &:after{
-		content: "";
-		display: block;
-		position: absolute;
-		z-index: 2;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		background: url(../img/image-bg.png) right center / contain no-repeat;
-	    }
-	}
-	.col-lg-6:nth-child(2){
-	    display: flex;
-	    padding: 3rem 0;
-	    flex-direction: column;
-	    justify-content: center;
-	    align-items: flex-start;
-	    padding-left: rem(40px);
-	    padding-right: rem(80px);
-	    > * {
-		max-width: rem(590px);
-		width: 100%;
-	    }
-	}
-    }
-    .img-section{
-	.col-lg-6:nth-child(1){
-	    position: relative;
-	    z-index: 1;
-	    img{
-		object-fit: cover;
-		height: 100%;
-		width: auto;
-	    }
-	    &:after{
-		content: "";
-		display: block;
-		position: absolute;
-		z-index: 2;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		background: url(../img/image-bg.png) right center / contain no-repeat;
-	    }
-	}
-	.col-lg-6:nth-child(2){
-	    display: flex;
-	    padding: 3rem 0;
-	    flex-direction: column;
-	    justify-content: center;
-	    align-items: flex-start;
-	    padding-left: rem(40px);
-	    padding-right: rem(80px);
-	    > * {
-		max-width: rem(590px);
-		width: 100%;
-	    }
-	}
-	&.invert{
-	    .row{
-		flex-direction: row-reverse;
-	    }
-	    .col-lg-6:nth-child(2){
-		align-items: flex-end;
-	    }
-	    .col-lg-6:nth-child(1){
-		&:after{
-		    transform: scale(-1, 1);
-		}
-	    }
-	}
-    }
-}
 @include media-breakpoint-up(xl) {
     html{
 	font-size: vw(19px);
@@ -176,46 +19,17 @@
 
 @include media-breakpoint-up(xxl) {
     html{
-	font-size: vw(17px);
+	font-size: vw(20px);
     }
     .container{
-	max-width: rem(1360px);
+	max-width: rem(1230px);
     }
 }
 @media(min-width: 2000px){
     html{
-	font-size: 17px;
+	font-size: 20px;
     }
     .container{
-	max-width: 1360px;
-    }
-    .page-header{
-	.h1{
-	    font-size: rem(81px);
-	}
-    }
-}
-@include media-breakpoint-only(lg) {
-    .plan .card-header h3{
-	font-size: 25px;
-    }
-}
-@include media-breakpoint-down(md) {
-    .hide-down-md{
-	display: none!important;
-    }
-    #main-banner{
-	.col-lg-6{
-	    padding-top: 3rem;
-	    padding-bottom: 3rem;
-	}
-	.btn-wrp{
-	    margin-bottom: 1rem;
-	}
-    }
-}
-@include media-breakpoint-down(sm) {
-    .container {
-	overflow: hidden;
+	max-width: 1230px;
     }
 }

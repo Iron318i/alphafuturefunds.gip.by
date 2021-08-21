@@ -25,17 +25,19 @@ $black:    #000; //
 // fusv-enable
 
 // scss-docs-start color-variables
-$yellow:  #e1ae3a;
+$blue:  #182244;
+$orange:  #f7941e;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
 $colors: (
-"yellow":     $yellow
+"blue":     $blue,
+"orange":     $orange
 );
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $yellow;
+$primary:       $blue;
 $dark:          $black;
 // scss-docs-end theme-color-variables
 
@@ -105,7 +107,7 @@ $spacers: (
 //
 // Settings for the `<body>` element.
 
-$body-bg: $gray-100;
+$body-bg: $white;
 $body-color: $black;
 
 // Utilities maps
@@ -160,7 +162,7 @@ sm: 540px,
 md: 720px,
 lg: 960px,
 xl: 1140px,
-xxl: 1360px
+xxl: 1230px
 );
 // scss-docs-end container-max-widths
 
@@ -204,8 +206,8 @@ $border-radius: rem(5px);
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:     'Raleway', sans-serif;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-sans-serif:     'Lato', sans-serif;
+$font-family-monospace:       'Noticia Text', monospace;
 // stylelint-enable value-keyword-case
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
@@ -215,8 +217,8 @@ $font-weight-light: 300;
 $font-weight-base:  $font-weight-light;
 
 
-$h1-font-size:  rem(45px);
-$h2-font-size:  rem(45px);
+$h1-font-size:  rem(48px);
+$h2-font-size:  rem(48px);
 $h3-font-size:  rem(35px);
 $h4-font-size:  rem(24px);
 $h5-font-size:  rem(20px);
@@ -227,7 +229,9 @@ $h5-font-size:  rem(20px);
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-font-weight: 700;
+$headings-font-weight: 400;
+$headings-color: $primary;
+$headings-font-family: $font-family-monospace;
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
