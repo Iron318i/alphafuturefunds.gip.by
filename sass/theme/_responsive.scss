@@ -9,6 +9,16 @@
     html{
 	font-size: 17px;
     }
+    .our-approach{
+	.col-lg-5{
+	    border-right: 1px solid #e8e8e8;
+	}
+	.approach-item + .approach-item{
+	    border-top: 1px solid #e8e8e8;
+	    padding-top: 2.5rem;
+	    margin-top: 2.5rem;
+	}
+    }
 }
 
 @include media-breakpoint-up(xl) {
@@ -17,6 +27,12 @@
     }
     .container{
 	max-width: 63rem;
+    }
+    .our-approach{
+	padding: 3rem 3.5rem 2rem;
+	.row{
+	    --bs-gutter-x: 7rem;
+	}
     }
 }
 
