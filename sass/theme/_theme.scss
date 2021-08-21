@@ -24,6 +24,10 @@ svg.icon{
 	border-color: $primary;
     }
 }
+label{
+    text-transform: uppercase;
+    font-family: $font-family-cursive;
+}
 /*Section*/
 .content-section{
     background-size: cover;
@@ -35,4 +39,19 @@ svg.icon{
 	padding: 0;
 	overflow: hidden;
     }
+}
+.fw-special-subtitle {
+    color: #a3a9c8;
+    font-family: $font-family-cursive;
+    text-transform: uppercase;
+    font-size: rem(18px);
+}
+.wpcf7{
+    background-color: $gray-100;
+    padding: 2rem 1rem;
+}
+.wpcf7-form{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(780px);
 }
