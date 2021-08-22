@@ -18,7 +18,6 @@ get_header();
 		    the_post();
 		    get_template_part('loop-templates/content', 'single');
 		}
-		echo do_shortcode('[Sassy_Social_Share]');
 		if (comments_open() || get_comments_number()) {
 		    comments_template();
 		}

@@ -22,10 +22,10 @@ defined('ABSPATH') || exit;
     <body <?php body_class(); ?> <?php alphafuturefunds_body_attributes(); ?>>
 	<?php do_action('wp_body_open'); ?>
 	<header class="site-header">
-	    <nav class="navbar navbar-expand-md">
+	    <nav class="navbar navbar-expand-lg">
 		<div class="container">
 		    <a href="<?php echo site_url(); ?>" class="logo-link" rel="home"><img src="<?php echo get_template_directory_uri() ?>/img/main-logo.png" srcset="<?php echo get_template_directory_uri() ?>/img/main-logo-x2.png 2x" alt="<?php bloginfo('name'); ?>"></a>
-		    <a href="tel:+<?php echo preg_replace("/[^0-9]/", "", fw_get_db_settings_option('phone')); ?>" class="phone"><svg class="icon"><use xlink:href="#phone-call"></use></svg><?php echo fw_get_db_settings_option('phone') ?></a>
+		    <a href="tel:+<?php echo preg_replace("/[^0-9]/", "", fw_get_db_settings_option('phone')); ?>" class="phone"><svg class="icon"><use xlink:href="#phone-call"></use></svg><span><?php echo fw_get_db_settings_option('phone') ?></span></a>
 		    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
 			<span class="toggle-icon"><i></i><i></i><i></i><i></i></span>
 			<span class="btn-text"><?php _e('Menu', 'alphafuturefunds'); ?></span>
