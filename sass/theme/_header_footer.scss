@@ -1,11 +1,30 @@
 /*Site-header*/
 .site-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     .logo-link{
 	display: block;
 	max-width: rem(252px);
     }
     .nav-link {
 	font-family: $font-family-cursive;
+    }
+    .phone{
+	display: flex;
+	align-items: center;
+	font-family: $font-family-monospace;
+	font-weight: 400;
+	color: #fff;
+	&:hover{
+	    color: $primary;
+	}
+	.icon{
+	    font-size: rem(47px);
+	    margin-right: rem(14px);
+	}
     }
 }
 .navbar-toggler{
@@ -127,6 +146,21 @@
     }
 }
 @include media-breakpoint-up(md) {
+    .site-header{
+	.logo-link{
+	    order: 0;
+	}
+	.navbar-collapse{
+	    order: 1;
+	    justify-content: center;
+	}
+	.phone{
+	    order: 2;
+	}
+	.navbar-toggler{
+	    order: 3;
+	}
+    }
     .site-footer{
 	.textwidget{
 	    font-size: rem(15px);
