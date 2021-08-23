@@ -7,23 +7,6 @@
     .nav-link {
 	font-family: $font-family-cursive;
     }
-    .phone{
-	display: flex;
-	align-items: center;
-	font-family: $font-family-monospace;
-	font-weight: 400;
-	color: $primary;
-	&:hover{
-	    color: $warning;
-	}
-	.icon{
-	    font-size: rem(35px);
-	    margin-right: rem(14px);
-	}
-	.home &{
-	    color: #fff;
-	}
-    }
 }
 .navbar-toggler{
     border:0 none;
@@ -152,11 +135,6 @@
 	    right: 0;
 	    z-index: 100;
 	}
-	.phone{
-	    .icon{
-		font-size: rem(47px);
-	    }
-	}
     }
     .site-footer{
 	.textwidget{
@@ -176,13 +154,10 @@
 	}
 	.navbar-collapse{
 	    order: 1;
-	    justify-content: center;
-	}
-	.phone{
-	    order: 2;
+	    justify-content: flex-end;
 	}
 	.navbar-toggler{
-	    order: 3;
+	    order: 2;
 	}
     }
 }
@@ -206,11 +181,6 @@
     .site-header{
 	.logo-link{
 	    max-width: 30vw;
-	}
-	.phone{
-	    span{
-		display: none;
-	    }
 	}
     }
 }
